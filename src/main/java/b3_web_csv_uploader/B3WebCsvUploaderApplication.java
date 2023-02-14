@@ -7,9 +7,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import b3_web_csv_uploader.property.FileStorageProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties({
-	FileStorageProperties.class
-})
+@EnableConfigurationProperties({ FileStorageProperties.class })
 public class B3WebCsvUploaderApplication {
 
 	public static void main(String[] args) {

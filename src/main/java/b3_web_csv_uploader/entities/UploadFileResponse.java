@@ -1,4 +1,4 @@
-package b3_web_csv_uploader;
+package b3_web_csv_uploader.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,7 +1,12 @@
 package b3_web_csv_uploader.service;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -13,20 +18,12 @@ import b3_web_csv_uploader.exception.MyFileNotFoundException;
 import b3_web_csv_uploader.property.FileStorageProperties;
 import lombok.Getter;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
-
 @Service
 @Getter
 public class FileStorageService {
 
     private final Path fileStorageLocation;
 
-    @Autowired
     public FileStorageService(FileStorageProperties fileStorageProperties) {
         this.fileStorageLocation = Paths.get(fileStorageProperties.getUploadDir())
                 .toAbsolutePath().normalize();
