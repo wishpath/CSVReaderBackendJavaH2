@@ -41,32 +41,32 @@ public class EmployeeController {
 		return repository.findAll();
 	}
 	
-	@PostMapping("/employees/save-from-csv")
-	public String uploadFile(@RequestParam("file") MultipartFile file, Model model) throws IOException { //model, kuris importas
-	    boolean finished = false;
-	    String message = "";
-
-	    if (CSVReader.hasCSVFormat(file)) {
-	        try {
-	            csvReader.read(file, model);
-	            message = "Uploaded the file successfully: " + file.getOriginalFilename();
-	            finished = true;
-	        } catch (Exception e) {
-	            message = "Could not upload the file: " + file.getOriginalFilename() + "!";
-	            message += e;
-	            finished = true;
-	        }
-	    }
-	    
-	    
-	    if (!CSVReader.hasCSVFormat(file)){ //pertvarkyti į else
-	        message = "File is empty!";
-	    }
-	    
-	    
-	    if (!finished) {
-	        message = "Please upload a csv file!";
-	    }
-	    return message;
-	}
+//	@PostMapping("/employees/save-from-csv")
+//	public String uploadFile(@RequestParam("file") MultipartFile file, Model model) throws IOException { //model, kuris importas
+//	    boolean finished = false;
+//	    String message = "";
+//
+//	    if (CSVReader.hasCSVFormat(file)) {
+//	        try {
+//	            csvReader.read(file);
+//	            message = "Uploaded the file successfully: " + file.getOriginalFilename();
+//	            finished = true;
+//	        } catch (Exception e) {
+//	            message = "Could not upload the file: " + file.getOriginalFilename() + "!";
+//	            message += e;
+//	            finished = true;
+//	        }
+//	    }
+//	    
+//	    
+//	    if (!CSVReader.hasCSVFormat(file)){ //pertvarkyti į else
+//	        message = "File is empty!";
+//	    }
+//	    
+//	    
+//	    if (!finished) {
+//	        message = "Please upload a csv file!";
+//	    }
+//	    return message;
+//	}
 }
