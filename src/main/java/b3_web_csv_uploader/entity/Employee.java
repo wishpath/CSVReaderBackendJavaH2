@@ -1,4 +1,4 @@
-package b3_web_csv_uploader.model;
+package b3_web_csv_uploader.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
