@@ -19,5 +19,7 @@ Produces .jar file to run the project.
 
 Runs the project.
 
-## Please follow frontend instructions, given in the links above.
+## More
+
+Please follow frontend instructions, given in the links above.
 
