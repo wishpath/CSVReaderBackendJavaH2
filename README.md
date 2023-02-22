@@ -4,8 +4,8 @@ This project was made using Java/Spring and H2.
 
 ## Please check:
 • [Deployed version](http://129.151.221.35/);<br />
-• [Frontend source code](https://github.com/wishpath/-CSVReaderFrontendReact) version for the deployed backend;<br />
-• [Frontend source code](https://github.com/wishpath/-CSVReaderFrontendReact/tree/localHostVersion) version for the local backend.<br />
+• [Frontend source code](https://github.com/wishpath/-CSVReaderFrontendReact).<br />
+<br />
 
 ## Instructions
 
