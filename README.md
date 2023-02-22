@@ -21,5 +21,5 @@ Runs the project.
 
 ## More
 
-Please follow frontend instructions, given in the links above.
+Please follow frontend instructions, given in the link above.
 
